@@ -13,16 +13,17 @@ public class Main {
 		
 
 		Product[] products = {product1, product2, product3};
+		System.out.println("********************************************************");
 		
 			System.out.println("Ürün Adedi  : "+products.length);
-			System.out.println("**************************");
+			System.out.println("********************************************************");
 		
 		for (Product product : products) {
 			System.out.println("Id          : "+product.getId());
 			System.out.println("ürünAdý     : "+product.getName());
 			System.out.println("ÜrünFiyatý  : "+product.getUnitPrice());
 			System.out.println("Açýklama    : "+product.getDetail());
-			System.out.println("**************************");
+			System.out.println("********************************************************");
 		}
 		
 		Category category1 = new Category(1,"Bilgisayar");
@@ -34,12 +35,16 @@ public class Main {
 		for (Category category : categories) {
 			System.out.println("Kategori Id :"+category.getId());
 			System.out.println("kategori Adý:"+category.getName());
-			System.out.println("**************************");
+			System.out.println("********************************************************");
 		}
 		
-		
+		ProductManager productManager = new ProductManager();
+		productManager.addToCart(product1);
+		productManager.addToCart(product2);
+		productManager.addToCart(product3);
 	}
 	
+		
 		
 
 }

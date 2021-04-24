@@ -7,10 +7,17 @@ public class Product {
 	 private double unitPrice;
 	 private String detail;
 	 
-	 public Product(int id,String name,double UnitPrice,String detail) {
+	 
+	 
+	 public Product() {
+		System.out.println("Ben Çalýþtým");
+	}
+
+	public Product(int id,String name,double unitPrice,String detail) {
+		 this();
 		 this.id=id;
 		 this.name=name;
-		 this.unitPrice=unitPrice;
+		 this.unitPrice = unitPrice;
 		 this.detail=detail;
 	 }
 
